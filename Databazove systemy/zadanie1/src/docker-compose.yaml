@@ -1,0 +1,18 @@
+#place from service can read data localy from host machine
+#volumes:
+#  data:
+#    driver_opts:
+#      type: none
+#      o: bind
+#      device: \\wsl.localhost\Debian\home\slave\postgres\zad2
+
+services:
+  dbsapp:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+    image: mydbsapp
+
+    ports:
+      - 8000:8000

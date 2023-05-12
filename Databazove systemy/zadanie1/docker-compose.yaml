@@ -1,0 +1,41 @@
+#place from service can read data localy from host machine
+#volumes:
+#  data:
+#    driver_opts:
+#      type: none
+#      o: bind
+#      device: \\wsl.localhost\Debian\home\slave\postgres\zad2
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: dbs_postgres
+
+    environment:
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=matus
+      - POSTGRES_PASSWORD=matus
+      - POSTGRES_DB=db
+    ports:
+      - 5432:5432
+
+  dbszad3:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+    image: dbszad3
+
+    environment:
+      - DATABASE_HOST=postgres
+      - DATABASE_PORT=5432
+      - DATABASE_USER=matus
+      - DATABASE_PASSWORD=matus
+      - DATABASE_NAME=db
+
+    depends_on:
+      - postgres
+
+    ports:
+      - 8000:8000
