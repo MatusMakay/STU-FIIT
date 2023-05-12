@@ -1,6 +1,6 @@
 # Databazove systemy zadanie 5
 
-## Zmeny oproti pôvodnemu návrhu
+## Zmeny oproti pôvodnemu návrhu databazy
 
 - borrowing som premenoval na rental
 - finess neobsahuje id reminder

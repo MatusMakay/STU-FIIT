@@ -104,14 +104,13 @@ class Receiver(Socket):
                 print("Keep alive is not responding!")
                 raise ComunicationExceed 
 
-            #toto neviem ci je s kostolnym poriadkom
             ipt = input("Sender exceeded time to send init message packet!\nDo you want to stay connected?\nY/N\n")
             if ipt == "Y" or ipt == "y":
                 print("Waiting on init file packet...")
                 self.listen_for_incomming_packets()
                 return
             else:
-                print("Receiver is listening for init packets!")
+                print("Receiver isn't listening for init packets!")
                 raise ComunicationExceed
 
         full_path = act_directory  + "classes/files/received/" + file_name
