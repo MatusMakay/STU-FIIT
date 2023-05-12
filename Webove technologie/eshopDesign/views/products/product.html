@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" stylesheet" href="../../style/output.css">
+
+    <script src="../../js/products.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+
+    <title>Document</title>
+</head>
+
+<body class="font-[Poppins] bg-white h-full no_scrollbar ">
+  <header class="bg-black fixed top-0 w-[100%]">
+      <nav class="flex justify-between items-center w-[92%] mx-auto ">
+          <div class="z-10">
+              <a href="../home/index.html" class="flex items-center">
+                  <img class="w-16" src="../img/main/happy.png" alt="">
+                  <h1 class="text-white pl-4 invisible md:visible">GoodStuff</h1>
+              </a>
+          </div>
+          <div
+              class=" nav-links duration-500 md:static left-0 absolute text-white md:min-h-fit min-h-[30vh] top-[-300%] md:w-auto w-full lg:ml-46 ml-0 bg-black  ">
+              <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8x pt-14 md:pt-0 ml-8 md:ml-0">
+                  <li>
+                      <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-trigger="click"
+                          type="button" class="hover:text-orange-500 my-2">Muži</button>
+                      <!-- Dropdown menu -->
+                      <div id="dropdown"
+                          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200 "
+                              aria-labelledby="dropdownDefaultButton">
+                              <li>
+                                  <a href="../products/products.html"
+                                      class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Tričká
+                                      s krátkym</a>
+                              </li>
+                              <li>
+                                  <a href="#"
+                                      class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Tričká
+                                      s dlhým</a>
+                              </li>
+                              <li>
+                                  <a href="#"
+                                      class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Mikiny</a>
+                              </li>
+                              <li>
+                                  <a href="#"
+                                      class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Rifle</a>
+                              </li>
+                              <li>
+                                  <a href="#"
+                                      class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Kraťase</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li>
+                      <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-trigger="click"
+                      type="button" class="hover:text-orange-500 my-2">Ženy</button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdown"
+                      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200 "
+                          aria-labelledby="dropdownDefaultButton">
+                          <li>
+                              <a href="#"
+                                  class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Tričká
+                                  s krátkym</a>
+                          </li>
+                          <li>
+                              <a href="#"
+                                  class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Tričká
+                                  s dlhým</a>
+                          </li>
+                          <li>
+                              <a href="#"
+                                  class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Mikiny</a>
+                          </li>
+                          <li>
+                              <a href="#"
+                                  class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Rifle</a>
+                          </li>
+                          <li>
+                              <a href="#"
+                                  class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Kraťase</a>
+                          </li>
+                      </ul>
+                  </div>
+                  </li>
+                  <li>
+                      <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-trigger="click"
+                          type="button" class="hover:text-orange-500 my-2">Deti</button>
+                      <!-- Dropdown menu -->
+                      <div id="dropdown"
+                          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200 "
+                              aria-labelledby="dropdownDefaultButton">
+                              <li>
+                                  <a href="#"
+                                      class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Tričká
+                                      s krátkym</a>
+                              </li>
+                              <li>
+                                  <a href="#"
+                                      class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Tričká
+                                      s dlhým</a>
+                              </li>
+                              <li>
+                                  <a href="#"
+                                      class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Mikiny</a>
+                              </li>
+                              <li>
+                                  <a href="#"
+                                      class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Rifle</a>
+                              </li>
+                              <li>
+                                  <a href="#"
+                                      class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Kraťase</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <div class="flex items-center gap-3 md:gap-6 z-10 mr-2 md:mr-0 ">
+              <form >
+                  <label for="default-search"
+                      class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                  <div class="relative">
+                      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                          <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
+                              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                          </svg>
+                      </div>
+                      <input type="search" id="default-search"
+                          class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="Vyhľadať" required>
+                  </div>
+              </form>
+              <a class="text-2xl font-semibold cursor-pointer md:hidden text-white hover:text-orange-400 mt-2">
+                  <ion-icon onclick="onToggleMenu(this)" name="grid-outline"
+                     ></ion-icon>
+              </a>
+                  <a href="../shoppingCart/shoppingCart.html" class="text-2xl font-semibold cursor-pointer text-white hover:text-orange-400 mt-2">
+                      <ion-icon name="cart-outline"
+                          ></ion-icon>
+                  </a>
+                  <a href="../login/login.html" class="text-2xl font-semibold cursor-pointer text-white hover:text-orange-400 mt-2">
+                      <ion-icon name="person-outline"
+                           ></ion-icon>
+                  </a>
+
+          </div>
+
+      </nav>
+  </header>
+
+
+
+
+
+
+
+
+
+
+    <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+
+        <div class="bg-white mt-12">
+              <!-- Product info -->
+              <div class="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-4 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-1">
+                <div class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border--200 lg:pt-6 lg:pb-16 lg:pr-8">
+                  <!-- Description and details -->
+                  <div >
+                    <h3 class="sr-only">Description</h3>
+
+                    <div class="lg:grid lg:grid-cols-1 lg:gap-y-8 sm:grid sm:grid-cols-1 sm:gap-y-8"  >
+                      <div class="static rounded-lg">
+                        <img src="../../img/man_in_shirt.jpg" alt="Model wearing plain black basic tee." class="h-full w-[100%] md:w-[80%] mx-auto ">
+                      </div>
+                    </div>        
+                  </div>
+                </div>
+          
+                <!-- Options -->
+                <div class="mt-4 lg:row-span-3 lg:col-span-2 lg:mt-0">
+
+                  <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Basic Tee</h1>
+                  
+                  <h2 class="sr-only">Product information</h2>
+                  
+                  <p class="text-base text-gray-900">The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: &quot;Black&quot;. Need to add an extra pop of color to your outfit? Our white tee has you covered.
+                  </p>
+                  <div class="mt-5">
+                    <h3 class="text-sm font-medium text-gray-900">Highlights</h3>
+          
+                    <div class="mt-4">
+                      <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
+                        <li class="text-gray-400"><span class="text-gray-600">Hand cut and sewn locally</span></li>
+          
+                        <li class="text-gray-400"><span class="text-gray-600">Dyed with our proprietary colors</span></li>
+          
+                        <li class="text-gray-400"><span class="text-gray-600">Pre-washed &amp; pre-shrunk</span></li>
+          
+                        <li class="text-gray-400"><span class="text-gray-600">Ultra-soft 100% cotton</span></li>
+                      </ul>
+                    </div>
+                  </div>
+          
+                 
+                  <form class="my-5 ">
+                    <!-- Colors -->
+                    <div>
+                      <h3 class="text-sm font-medium text-gray-900">Color</h3>
+          
+                      <fieldset class="mt-4">
+                        <legend class="sr-only">Choose a color</legend>
+                        <div class="flex items-center space-x-3">
+                          <!--
+                            Active and Checked: "ring ring-offset-1"
+                            Not Active and Checked: "ring-2"
+                          -->
+                          <label class=" -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none ring-gray-400">
+                            <input type="radio" name="color-choice" value="White" class="sr-only" aria-labelledby="color-choice-0-label">
+                            <span id="color-choice-0-label" class="sr-only"> White </span>
+                            <span aria-hidden="true" class="h-8 w-8 bg-white rounded-full border border-black border-opacity-10"></span>
+                          </label>
+          
+                          <!--
+                            Active and Checked: "ring ring-offset-1"
+                            Not Active and Checked: "ring-2"
+                          -->
+                          <label class=" -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none ring-gray-400">
+                            <input type="radio" name="color-choice" value="Pink" class="sr-only" aria-labelledby="color-choice-1-label">
+                            <span id="color-choice-1-label" class="sr-only"> Pink </span>
+                            <span aria-hidden="true" class="h-8 w-8 bg-pink-200 rounded-full border border-black border-opacity-10"></span>
+                          </label>
+          
+                          <!--
+                            Active and Checked: "ring ring-offset-1"
+                            Not Active and Checked: "ring-2"
+                          -->
+                          <label class=" -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none ring-gray-900">
+                            <input type="radio" name="color-choice" value="Black" class="sr-only" aria-labelledby="color-choice-2-label">
+                            <span id="color-choice-2-label" class="sr-only"> Black </span>
+                            <span aria-hidden="true" class="h-8 w-8 bg-gray-900 rounded-full border border-black border-opacity-10"></span>
+                          </label>
+                        </div>
+                      </fieldset>
+                    </div>
+          
+                    <!-- Sizes -->
+                    <div class="mt-5">
+                      <div class="flex items-center justify-between">
+                        <h3 class="text-sm font-medium text-gray-900">Size</h3>
+                       
+                      </div>
+          
+                      <fieldset class="mt-1">
+                        <legend class="sr-only">Choose a size</legend>
+                        <div class="grid grid-cols-3 gap-5 sm:grid-cols-6 lg:grid-cols-3">
+                          
+          
+                          
+          
+                          <!-- Active: "ring-2 ring-indigo-500" -->
+                          <label class="group flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 cursor-pointer bg-gray-50 text-gray-900 shadow-sm">
+                            <input type="radio" name="size-choice" value="S" class="sr-only" aria-labelledby="size-choice-2-label" background="red">
+                            <span id="size-choice-2-label">S</span>
+          
+                            <!--
+                              Active: "border", Not Active: "border-2"
+                              Checked: "border-indigo-500", Not Checked: "border-transparent"
+                            -->
+                            <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                          </label>
+          
+                          <!-- Active: "ring-2 ring-indigo-500" -->
+                          <label class="group flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 cursor-pointer bg-gray-50 text-gray-900 shadow-sm">
+                            <input type="radio" name="size-choice" value="M" class="sr-only" aria-labelledby="size-choice-3-label">
+                            <span id="size-choice-3-label">M</span>
+          
+                            <!--
+                              Active: "border", Not Active: "border-2"
+                              Checked: "border-indigo-500", Not Checked: "border-transparent"
+                            -->
+                            <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                          </label>
+          
+                          <!-- Active: "ring-2 ring-indigo-500" -->
+                          <label class="group flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 cursor-pointer bg-gray-50 text-gray-900 shadow-sm">
+                            <input type="radio" name="size-choice" value="L" class="sr-only" aria-labelledby="size-choice-4-label">
+                            <span id="size-choice-4-label">L</span>
+          
+                            <!--
+                              Active: "border", Not Active: "border-2"
+                              Checked: "border-indigo-500", Not Checked: "border-transparent"
+                            -->
+                            <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                          </label>
+          
+                          <!-- Active: "ring-2 ring-indigo-500" -->
+                          <label class="group flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 cursor-pointer bg-gray-50 text-gray-900 shadow-sm">
+                            <input type="radio" name="size-choice" value="XL" class="sr-only" aria-labelledby="size-choice-5-label">
+                            <span id="size-choice-5-label">XL</span>
+          
+                            <!--
+                              Active: "border", Not Active: "border-2"
+                              Checked: "border-indigo-500", Not Checked: "border-transparent"
+                            -->
+                            <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                          </label>
+          
+                          <!-- Active: "ring-2 ring-indigo-500" -->
+                          <label class="group flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50  focus:outline-none sm:flex-1 sm:py-6 cursor-pointer bg-gray-50 text-gray-900 shadow-sm">
+                            <input type="radio" name="size-choice" value="XXL" class="sr-only" aria-labelledby="size-choice-6-label">
+                            <span id="size-choice-6-label">XXL</span>
+          
+                            <!--
+                              Active: "border", Not Active: "border-2"
+                              Checked: "border-indigo-500", Not Checked: "border-transparent"
+                            -->
+                            <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                          </label>
+          
+                    
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="mt-4">
+                      <h3 class="text-sm font-medium text-gray-900">Price</h3>
+                    <p class="text-3xl tracking-tight text-gray-900">35€</p>
+                    </div>
+                    <button type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-gray-600 py-3 px-8 text-base font-medium text-white hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"><a href="../shoppingCart/shoppingCart.html">Add to cart</a></button>
+                  </form>
+                </div>
+          
+              
+              </div>
+            </div>
+          </div>
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+
+        
+    </main>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === "grid-outline" ? "close" : "grid-outline";
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+
+</html>

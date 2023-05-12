@@ -1,0 +1,26 @@
+{
+  "name": "wtech-project",
+  "version": "1.0.0",
+  "description": "Zaverecny projekt na wtech. Zamer eshop s oblecenim ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatusMakay/wtech-project.git"
+  },
+  "author": "Matus Makay, Alex Cerepan, Filip Remsik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatusMakay/wtech-project/issues"
+  },
+  "homepage": "https://github.com/MatusMakay/wtech-project#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3"
+  }
+}

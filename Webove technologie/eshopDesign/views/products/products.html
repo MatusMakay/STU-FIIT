@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="../../js/products.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+    <link rel="stylesheet" href="../../style/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+
+    <title>Document</title>
+</head>
+
+<body class="font-[Poppins] h-full no_scrollbar ">
+
+    <header class="bg-black fixed top-0 w-[100%] z-10">
+        <nav class="flex justify-between items-center w-[92%] mx-auto ">
+            <div class="z-10">
+                <a href="../home/index.html" class="flex items-center">
+                    <img class="w-16" src="../img/main/happy.png" alt="">
+                    <h1 class="text-white pl-4 invisible md:visible">GoodStuff</h1>
+                </a>
+            </div>
+            <div
+                class=" nav-links duration-500 md:static left-0 absolute text-white md:min-h-fit min-h-[30vh] top-[-300%] md:w-auto w-full lg:ml-46 ml-0 bg-black  ">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8x pt-14 md:pt-0 ml-8 md:ml-0">
+                    <li>
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-trigger="click"
+                            type="button" class="hover:text-orange-500 my-2">Muži</button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200 "
+                                aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="../products/products.html"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Tričká
+                                        s krátkym</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Tričká
+                                        s dlhým</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Mikiny</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Rifle</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Kraťase</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-trigger="click"
+                            type="button" class="hover:text-orange-500 my-2">Ženy</button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200 "
+                                aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Tričká
+                                        s krátkym</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Tričká
+                                        s dlhým</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Mikiny</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Rifle</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Kraťase</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-trigger="click"
+                            type="button" class="hover:text-orange-500 my-2">Deti</button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200 "
+                                aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Tričká
+                                        s krátkym</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Tričká
+                                        s dlhým</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Mikiny</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Rifle</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white">Kraťase</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-3 md:gap-6 z-10 mr-2 md:mr-0 ">
+                <form>
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Vyhľadať" required>
+                    </div>
+                </form>
+                <a class="text-2xl font-semibold cursor-pointer md:hidden text-white hover:text-orange-400 mt-2">
+                    <ion-icon onclick="onToggleMenu(this)" name="grid-outline"></ion-icon>
+                </a>
+                <a href="../shoppingCart/shoppingCart.html"
+                    class="text-2xl font-semibold cursor-pointer text-white hover:text-orange-400 mt-2">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </a>
+                <a href="../login/login.html"
+                    class="text-2xl font-semibold cursor-pointer text-white hover:text-orange-400 mt-2">
+                    <ion-icon name="person-outline"></ion-icon>
+                </a>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        <div class="flex  md:items-baseline justify-between border-b border-gray-200 pt-24 pb-6">
+            <!--SORT MOTHERFUCKA neeed js code to work-->
+            <button id="filter-mobile" onclick="filterClick()" class=" sm:block md:hidden w">
+                <img src="../img/products/add-circle-outline.svg" class="w-10 h-10" alt="">
+            </button>
+
+            <div class="text-center w-full ">
+                <h1 class="md:ml-20 text-4xl font-bold tracking-tight text-gray-900 ">Muži tričká</h1>
+            </div>
+
+            <div class="flex items-center">
+                <div class="inline-block text-left">
+                    <div>
+                        <button onclick="menuBtnClick()" id="sort-btn" type="button"
+                            class="inline-flex justify-center text-m font-medium text-gray-900 " id="menu-button">
+                            <span class="sm:hidden md:block ">
+                                Usporiadaj
+                            </span>
+                            <img src="../img/products/chevron-down-outline.svg" alt="" class="w-6 h-6 sort-icon">
+
+                        </button>
+                    </div>
+
+                    <div id="sort-menu"
+                        class="hidden absolute right-0 z-10 mt-2 w-60 origin-top-right rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none md:mr-6 lg:mr-20 sm:mr-2"
+                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class="py-1" role="none">
+                            <a href="#"
+                                class="text-gray-500 block px-4 py-2 text-sm hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                role="menuitem" tabindex="-1" id="menu-item-0">Najviac obľúbené</a>
+
+                            <a href="#"
+                                class="text-gray-500 block px-4 py-2 text-sm hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                role="menuitem" tabindex="-1" id="menu-item-1">Najlepšie hodnotené</a>
+
+                            <a href="#"
+                                class="text-gray-500 block px-4 py-2 text-sm hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                role="menuitem" tabindex="-1" id="menu-item-2">Najnovšie</a>
+
+                            <a href="#"
+                                class="text-gray-500 block px-4 py-2 text-sm hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                role="menuitem" tabindex="-1" id="menu-item-3">Cena: Od najnižšej</a>
+
+                            <a href="#"
+                                class="text-gray-500 block px-4 py-2 text-sm hover:bg-orange-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                role="menuitem" tabindex="-1" id="menu-item-4">Cena: Od najvyššej</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="pt-6 pb-24">
+
+            <div class="md:grid gap-x-8 gap-y-10 md:grid-cols-4">
+                <!-- Filters -->
+
+                <div id="filters"
+                    class="md:block sm:hidden max-sm:w-[60%] max-sm:absolute max-sm:bg-white max-sm:p-6 max-sm:rounded-lg max-sm:border max-sm:border-gray-600 max-sm:mt-[-35px] max-sm:z-1">
+                    <form class="block w-80px columns-1xs ">
+
+
+                        <h3 class=" text-3xl text-center">
+                            Filtre
+                        </h3>
+                        <div class="border-b border-gray-200 py-6">
+                            <h3 class="-my-3 flow-root">
+                                <button type="button"
+                                    class="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500"
+                                    aria-controls="filter-section-0" aria-expanded="false">
+                                    <span class="text-xl text-gray-900">Color</span>
+                                </button>
+                            </h3>
+                            <div class="pt-6" id="filter-section-0">
+                                <div class="space-y-4">
+                                    <div class="flex items-center">
+                                        <input id="filter-color-0" name="color[]" value="white" type="checkbox"
+                                            class="accent-orange h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                        <label for="filter-color-0" class="ml-3 text-sm text-gray-600">Biela</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input id="filter-color-2" name="color[]" value="blue" type="checkbox" checked
+                                            class=" accent-orange h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                        <label for="filter-color-2" class="ml-3 text-sm text-gray-600">Čierna</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input id="filter-color-3" name="color[]" value="brown" type="checkbox"
+                                            class="accent-orange h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                        <label for="filter-color-3" class="ml-3 text-sm text-gray-600">Ružová</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-gray-200 py-6">
+                            <h3 class="-my-3 flow-root">
+                                <button type="button"
+                                    class="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500"
+                                    aria-controls="filter-section-1" aria-expanded="false">
+                                    <span class="text-xl text-gray-900">Typ trička</span>
+                                </button>
+                            </h3>
+                            <div class="pt-6" id="filter-section-1">
+                                <div class="space-y-4">
+                                    <div class="flex items-center">
+                                        <input id="filter-category-1" name="category[]" value="sale" type="checkbox"
+                                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 accent-orange">
+                                        <label for="filter-category-1" class="ml-3 text-sm text-gray-600">S dlhým
+                                            rukávom</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input id="filter-category-2" name="category[]" value="travel" type="checkbox"
+                                            class="accent-orange h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                        <label for="filter-category-2" class="ml-3 text-sm text-gray-600">S krátkym
+                                            rukávom</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input id="filter-category-3" name="category[]" value="organization"
+                                            type="checkbox"
+                                            class="accent-orange h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                        <label for="filter-category-3" class="ml-3 text-sm text-gray-600">Príliš
+                                            veľké</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-gray-200 py-6">
+                            <h3 class="-my-3 flow-root">
+                                <button type="button"
+                                    class="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500"
+                                    aria-controls="filter-section-2" aria-expanded="false">
+                                    <span class="text-xl text text-gray-900">Veľkosť</span>
+
+                                </button>
+                            </h3>
+                            <div class="pt-6" id="filter-section-2">
+                                <div class="space-y-4">
+                                    <div class="flex items-center">
+                                        <input id="filter-size-0" name="size[]" value="2l" type="checkbox"
+                                            class="accent-orange h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                        <label for="filter-size-0" class="ml-3 text-sm text-gray-600">S</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input id=" filter-size-1" name="size[]" value="6l" type="checkbox"
+                                            class="accent-orange h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                        <label for="filter-size-1" class="ml-3 text-sm text-gray-600">M</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input id="filter-size-2" name="size[]" value="12l" type="checkbox"
+                                            class="accent-orange h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                        <label for="filter-size-2" class="ml-3 text-sm text-gray-600">L</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input id="filter-size-3" name="size[]" value="18l" type="checkbox"
+                                            class="accent-orange h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                        <label for="filter-size-3" class="ml-3 text-sm text-gray-600">XL</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input id="filter-size-4" name="size[]" value="20l" type="checkbox"
+                                            class="accent-orange h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                        <label for="filter-size-4" class="ml-3 text-sm text-gray-600">XXL</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full text-center">
+                            <button
+                                class="w-10 h-10 bg-gray-700 px-2 py-2 mt-4 text-white rounded-full hover:bg-orange-600 bg-[url('../img/products/checkmark-outline.svg')]">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="md:col-span-3 sm:col-span-2 ">
+                    <div
+                        class="mt-6 grid grid-cols-1 gap-y-10 md:grid-cols-2 gap-x-6 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 ">
+                        <div class=" sm:max-w-sm lg:h-md ">
+                            <div class="min-h-80 w-full overflow-hidden rounded-md ">
+                                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                    alt="Front of men&#039;s Basic Tee in black."
+                                    class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="product.html">
+                                            Basic Tee
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Black</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">$35</p>
+                            </div>
+                        </div>
+                        <div class="sm:max-w-sm lg:h-md ">
+                            <div class="min-h-80  w-full overflow-hidden rounded-md ">
+                                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                    alt="Front of men&#039;s Basic Tee in black."
+                                    class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="#">
+                                            <span aria-hidden="true"></span>
+                                            Basic Tee
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Black</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">$35</p>
+                            </div>
+                        </div>
+                        <div class="sm:max-w-sm lg:h-md ">
+                            <div class="min-h-80  w-full overflow-hidden rounded-md ">
+                                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                    alt="Front of men&#039;s Basic Tee in black."
+                                    class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="#">
+                                            <span aria-hidden="true"></span>
+                                            Basic Tee
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Black</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">$35</p>
+                            </div>
+                        </div>
+                        <div class="sm:max-w-sm lg:h-md ">
+                            <div class="min-h-80  w-full overflow-hidden rounded-md ">
+                                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                    alt="Front of men&#039;s Basic Tee in black."
+                                    class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="#">
+                                            <span aria-hidden="true"></span>
+                                            Basic Tee
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Black</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">$35</p>
+                            </div>
+                        </div>
+                        <div class="sm:max-w-sm lg:h-md ">
+                            <div class="min-h-80  w-full overflow-hidden rounded-md ">
+                                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                    alt="Front of men&#039;s Basic Tee in black."
+                                    class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="#">
+                                            <span aria-hidden="true"></span>
+                                            Basic Tee
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Black</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">$35</p>
+                            </div>
+                        </div>
+                        <div class="sm:max-w-sm lg:h-md ">
+                            <div class="min-h-80  w-full overflow-hidden rounded-md ">
+                                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                    alt="Front of men&#039;s Basic Tee in black."
+                                    class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="#">
+                                            <span aria-hidden="true"></span>
+                                            Basic Tee
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Black</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">$35</p>
+                            </div>
+                        </div>
+                        <div class="sm:max-w-sm lg:h-md ">
+                            <div class="min-h-80  w-full overflow-hidden rounded-md ">
+                                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                    alt="Front of men&#039;s Basic Tee in black."
+                                    class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="#">
+                                            <span aria-hidden="true"></span>
+                                            Basic Tee
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Black</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">$35</p>
+                            </div>
+                        </div>
+                        <div class="sm:max-w-sm lg:h-md ">
+                            <div class="min-h-80  w-full overflow-hidden rounded-md ">
+                                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                    alt="Front of men&#039;s Basic Tee in black."
+                                    class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="#">
+                                            Basic Tee
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Black</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">$35</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer
+        class="mt-5 fixed bottom-0 left-0 z-20 w-full p-4 bg-black text-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+        <span class="text-sm  sm:text-center">© 2023 <a href="https://flowbite.com/" class="hover:underline">FIIT
+                Mafial™</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm sm:mt-0">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">O nás</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Kontakt</a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === "grid-outline" ? "close" : "grid-outline";
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+
+</body>
+
+</html>

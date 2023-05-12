@@ -1,0 +1,24 @@
+@tailwindcss base;
+@tailwind components;
+@tailwind utilities;
+
+.no_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+ion-icon {
+  color: white;
+}
+
+ion-icon:hover {
+  color: orange;
+}
+
+.register-image {
+  background-image: url("../views/img/main/Beautiful.jpg");
+}
+
+#shipping-box {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
